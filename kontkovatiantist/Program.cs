@@ -1,4 +1,4 @@
-﻿namespace kontkovatiantist
+﻿namespace kontrvatiantist
 {
     internal class Program
     {
@@ -6,6 +6,10 @@
         {
             Email emailBox = SendMessage;
             emailBox(new EmailMessage("Welcome"));
+
+            //контрвариантность позволяет присваевать делегату метод, тип параметра которого является более универсальным по отношению к типу параметра делегата
+
+            //ДЗ: ковариантный обобщенный делегат и контрвариантный обабщенный делегат
         }
 
         static void SendMessage(Message message) =>
